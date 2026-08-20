@@ -163,7 +163,7 @@ img {
 .btn-secondary-dark,
 .btn-whatsapp {
    border: 1px solid rgba(255, 255, 255, 0.18);
-   background: rgba(255, 255, 255, 0.02);
+   background: rgba(18, 23, 29, 0.8);
    color: var(--white);
 }
 
