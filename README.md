@@ -44,4 +44,4 @@ Em desenvolvimento.
 
 ## Desenvolvedor
 
-Marcus Vinicius
+Marcus Vinicius Maciel Correia
