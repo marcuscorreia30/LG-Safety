@@ -1,0 +1,299 @@
+/* =========================
+   HERO
+========================= */
+
+.services-hero {
+    background-color: #111111;
+}
+
+
+/* =========================
+   INTRODUÇÃO
+========================= */
+
+.services-intro {
+    padding: 100px 0;
+}
+
+.services-intro-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: start;
+}
+
+.services-intro-grid h2 {
+    max-width: 550px;
+
+    font-size: 42px;
+
+    line-height: 1.15;
+
+    margin-top: 15px;
+}
+
+.services-intro-grid p {
+    color: #666666;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   SERVIÇOS DETALHADOS
+========================= */
+
+.services-list {
+    padding: 30px 0 110px;
+}
+
+.service-detail {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    min-height: 550px;
+
+    margin-bottom: 80px;
+
+    background-color: #f5f5f5;
+}
+
+.service-detail.reverse {
+    direction: rtl;
+}
+
+.service-detail.reverse
+.service-detail-content {
+    direction: ltr;
+}
+
+.service-detail-image {
+    min-height: 550px;
+
+    overflow: hidden;
+}
+
+.service-detail-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.4s;
+}
+
+.service-detail:hover
+.service-detail-image img {
+    transform: scale(1.03);
+}
+
+.service-detail-content {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 70px;
+}
+
+.service-detail-content > span {
+    color: #e5a400;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.service-detail-content h2 {
+    font-size: 40px;
+
+    line-height: 1.15;
+
+    margin-bottom: 20px;
+}
+
+.service-detail-content p {
+    max-width: 500px;
+
+    color: #666666;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+.service-detail-content ul {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    list-style: none;
+}
+
+.service-detail-content li {
+    position: relative;
+
+    padding-left: 20px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.service-detail-content li::before {
+    content: "✓";
+
+    position: absolute;
+
+    left: 0;
+
+    color: #e5a400;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   PROCESSO
+========================= */
+
+.process {
+    padding: 110px 0;
+
+    background-color: #111111;
+
+    color: #ffffff;
+}
+
+.process .section-title p {
+    color: #aaaaaa;
+}
+
+.process-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.process-step {
+    padding: 35px;
+
+    border: 1px solid #333333;
+}
+
+.process-step > span {
+    display: block;
+
+    color: #e5a400;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    margin-bottom: 35px;
+}
+
+.process-step h3 {
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+.process-step p {
+    color: #999999;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 900px) {
+
+    .services-intro-grid {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .service-detail {
+        grid-template-columns: 1fr;
+    }
+
+    .service-detail.reverse {
+        direction: ltr;
+    }
+
+    .service-detail-image {
+        min-height: 400px;
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .services-intro {
+        padding: 70px 0;
+    }
+
+    .services-intro-grid h2 {
+        font-size: 34px;
+    }
+
+    .service-detail {
+        margin-bottom: 50px;
+    }
+
+    .service-detail-image {
+        min-height: 300px;
+    }
+
+    .service-detail-content {
+        padding: 40px 25px;
+    }
+
+    .service-detail-content h2 {
+        font-size: 32px;
+    }
+
+    .service-detail-content ul {
+        grid-template-columns: 1fr;
+    }
+
+    .process {
+        padding: 70px 0;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
